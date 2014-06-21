@@ -1,2 +1,34 @@
 @import "scss/generic/variables";
 @import "scss/generic/mixins";
+
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+@mixin sg-swatch( $color ) {
+	background-color: $color;
+	+ .sg-label:after {
+		display: inline;
+		content: "#{$color}";
+	}
+}
+
+
+/*------------------------------------*\
+    $COLOR SWATCHES
+\*------------------------------------*/
+
+.sg-colors {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+	.sg-swatch--black {@include sg-swatch( $black );}
+	.sg-swatch--white {@include sg-swatch( $white );}
+	.sg-swatch--blue {@include sg-swatch( $blue );}
+	.sg-swatch--grey {@include sg-swatch( $grey );}
+//	.sg-swatch-- {@include sg-swatch( $ );}
+//	.sg-swatch-- {@include sg-swatch( $ );}
+//	.sg-swatch-- {@include sg-swatch( $ );}
+//	.sg-swatch-- {@include sg-swatch( $ );}
+	
