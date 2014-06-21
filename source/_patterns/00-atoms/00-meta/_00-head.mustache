@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html class="{{ htmlClass }}">
+<html class="{{ htmlClass }} no-js">
 	<head>
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
+		<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'')+' js'})(document.documentElement)</script>
 		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
