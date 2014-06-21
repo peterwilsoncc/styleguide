@@ -400,6 +400,16 @@ td,
 th {
   padding: 0; }
 
+a {
+  color: blue; }
+
+a:visited {
+  color: #663399;
+  color: rebeccapurple; }
+
+a:active {
+  color: red; }
+
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
