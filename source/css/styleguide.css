@@ -45,4 +45,8 @@
     display: inline;
     content: "darkgray"; }
 
+.sg-swatch.is-labeled + .sg-label:after {
+  content: none;
+  display: none; }
+
 /*# sourceMappingURL=styleguide.css.map */

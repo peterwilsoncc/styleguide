@@ -27,6 +27,11 @@
 	.sg-swatch--white {@include sg-swatch( $white );}
 	.sg-swatch--blue {@include sg-swatch( $blue );}
 	.sg-swatch--grey {@include sg-swatch( $grey );}
+	
+	.sg-swatch.is-labeled + .sg-label:after {
+		content: none;
+		display: none;
+	}
 //	.sg-swatch-- {@include sg-swatch( $ );}
 //	.sg-swatch-- {@include sg-swatch( $ );}
 //	.sg-swatch-- {@include sg-swatch( $ );}
