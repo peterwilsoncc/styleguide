@@ -34,16 +34,22 @@
     content: "white"; }
 
 .sg-swatch--blue {
-  background-color: #485ca5; }
+  background-color: #006ef6; }
   .sg-swatch--blue + .sg-label:after {
     display: inline;
-    content: "#485ca5"; }
+    content: "#006ef6"; }
 
-.sg-swatch--grey {
-  background-color: darkgray; }
-  .sg-swatch--grey + .sg-label:after {
+.sg-swatch--lightgrey {
+  background-color: #bdc2c7; }
+  .sg-swatch--lightgrey + .sg-label:after {
     display: inline;
-    content: "darkgray"; }
+    content: "#bdc2c7"; }
+
+.sg-swatch--darkgrey {
+  background-color: #8a8a8a; }
+  .sg-swatch--darkgrey + .sg-label:after {
+    display: inline;
+    content: "#8a8a8a"; }
 
 .sg-swatch.is-labeled + .sg-label:after {
   content: none;

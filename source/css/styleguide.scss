@@ -26,7 +26,8 @@
 	.sg-swatch--black {@include sg-swatch( $black );}
 	.sg-swatch--white {@include sg-swatch( $white );}
 	.sg-swatch--blue {@include sg-swatch( $blue );}
-	.sg-swatch--grey {@include sg-swatch( $grey );}
+	.sg-swatch--lightgrey {@include sg-swatch( $lightgrey );}
+	.sg-swatch--darkgrey {@include sg-swatch( $darkgrey );}
 	
 	.sg-swatch.is-labeled + .sg-label:after {
 		content: none;
