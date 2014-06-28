@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    $COLOR SWATCHES
+\*------------------------------------*/
+.sg-colors {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.sg-swatch--black {
+  background-color: black; }
+  .sg-swatch--black + .sg-label:after {
+    display: inline;
+    content: "black"; }
+
+.sg-swatch--white {
+  background-color: white; }
+  .sg-swatch--white + .sg-label:after {
+    display: inline;
+    content: "white"; }
+
+.sg-swatch--blue {
+  background-color: #485ca5; }
+  .sg-swatch--blue + .sg-label:after {
+    display: inline;
+    content: "#485ca5"; }
+
+.sg-swatch--grey {
+  background-color: darkgray; }
+  .sg-swatch--grey + .sg-label:after {
+    display: inline;
+    content: "darkgray"; }
+
+.sg-swatch.is-labeled + .sg-label:after {
+  content: none;
+  display: none; }
+
+/*# sourceMappingURL=styleguide.css.map */
