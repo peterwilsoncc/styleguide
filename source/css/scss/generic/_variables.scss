@@ -9,14 +9,26 @@ $black: #000000;
 $lightgrey: #bdc2c7;
 $darkgrey: #8a8a8a;
 
+//Use colors
+$pwccCol_useHtmlColor: $black;
+$pwccCol_useHtmlBackgroundColor: #f1f1f1;
+$pwccCol_useLinkColor: $blue;
 
 //Typography
-$primaryFont: sans-serif;
-$secondaryFont: serif;
-$preformattedFont: monospace;
+$pwccType_baseFontSize: 1rem;
+$pwccType_baseLineHeight: 1.5;
+$pwccType_primaryFont: sans-serif;
+$pwccType_secondaryFont: serif;
+$pwccType_preformattedFont: monospace;
+
+$pwccType_useHtmlFontSize: $pwccType_baseFontSize;
 
 
-//Layout
+
+
+//Spacing units
+$pwccSpace_baseSpacingUnit: 1.5rem;
+$pwccSpace_leftSpacingUnit: 2 * $pwccSpace_baseSpacingUnit;
 
 
 //Defaults
@@ -28,3 +40,4 @@ $preformattedFont: monospace;
 //Breakpoints
 
 
+//Inuit CSS unit translations

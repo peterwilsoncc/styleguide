@@ -1,0 +1,7 @@
+.u-cf {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
