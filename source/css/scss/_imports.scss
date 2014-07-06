@@ -1,0 +1,56 @@
+@import "generic/css-warning";
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * 
+ */
+
+
+
+/*------------------------------------*\
+    $Generic Elements
+\*------------------------------------*/
+
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/normalize";
+@import "generic/rebeccapurple";
+@import "generic/reset";
+@import "generic/box-sizing";
+@import "generic/shared";
+
+
+/*------------------------------------*\
+    $Base
+\*------------------------------------*/
+
+@import "base/forms";
+@import "base/images";
+@import "base/links";
+@import "base/lists";
+@import "base/page";
+
+/*------------------------------------*\
+    $Utilities
+\*------------------------------------*/
+
+@import "utilities/clearfix";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+
