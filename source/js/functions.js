@@ -2,8 +2,9 @@
 (function(P, W, C, c) {
 	var w = {
 		google: {
-			families: ['Lato:400,700,400italic,700italic:latin', 'Source+Code+Pro::latin']
+			families: ['Lato:400,700,400italic,700italic:latin']
 		},
+		fontdeck: { id: '47046' },
 		timeout: 3000
 	},
 		e = P.documentElement,
@@ -14,7 +15,7 @@
 			e[C] = e[C].replace(/\bwf-loading\b/g, "") + c + "inactive";
 		}, w.timeout);
 	e[C] += c + "loading";
-	b.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.2/webfont.js';
+	b.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
 	b.onload = b.onreadystatechange = function() {
 		n = this.readyState;
 		if (f || n && n !== "complete" && n !== "loaded") {return;}
