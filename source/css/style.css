@@ -579,6 +579,34 @@ h6, .u-h6 {
 	font-style: normal;
 }
 */
+blockquote {
+  color: #006ef6;
+  background-color: rgba(0, 110, 246, 0.1);
+  border-left: 1px solid;
+  margin-left: 10em;
+  padding-left: calc(2em - 1px );
+  padding-right: 12em;
+  padding-top: 1.5rem;
+  /* these are 1.5rem to account for line height of 2 */
+  padding-bottom: 1.5rem;
+  /* these are 1.5rem to account for line height of 2 */ }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+blockquote a,
+blockquote a:visited {
+  color: black;
+  text-decoration: underline; }
+
+blockquote a:focus,
+blockquote a:hover,
+blockquote a:active {
+  color: black;
+  text-decoration: none; }
+
+blockquote cite {
+  color: #bdc2c7; }
+
 /*------------------------------------*\
     $Utilities
 \*------------------------------------*/

@@ -13,6 +13,10 @@ $darkgrey: #5f5f5f;
 $pwccCol_useHtmlColor: $black;
 $pwccCol_useHtmlBackgroundColor: #f1f1f1;
 $pwccCol_useLinkColor: $blue;
+$pwccCol_useBlockquoteColor: $blue;
+$pwccCol_useBlockquoteBackgroundColor: rgba( $blue, .1 );
+$pwccCol_useBlockquoteLinkColor: #000;
+$pwccCol_useCiteColor: $lightgrey;
 
 //Typography
 $pwccType_baseFontSize: 1rem;
@@ -26,6 +30,7 @@ $pwccType_useHtmlFontSize: $pwccType_baseFontSize;
 $pwccType_useHtmlFontFamily: $pwccType_primaryFont;
 $pwccType_useHeadingFontFamily: $pwccType_secondaryFont_Bold;
 $pwccType_useHeadingFontFamilySmall: $pwccType_secondaryFont;
+
 
 
 //Spacing units
