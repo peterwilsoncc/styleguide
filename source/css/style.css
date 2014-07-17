@@ -534,6 +534,12 @@ html {
 html {
   font-family: Lato, sans-serif; }
 
+code,
+kbd,
+pre,
+samp {
+  font-family: "Source Code Pro", monospace; }
+
 h1, .u-h1,
 h2, .u-h2,
 h3, .u-h3,
@@ -593,9 +599,9 @@ blockquote {
   @media only screen and (min-width: 20em) {
     blockquote {
       border-left: 1px solid;
-      margin-left: 10em;
+      margin-left: 4em;
       padding-left: calc(2em - 1px );
-      padding-right: 12em; } }
+      padding-right: 6em; } }
 
 blockquote a,
 blockquote a:visited {
