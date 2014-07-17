@@ -2,6 +2,14 @@ html {
 	font-family: $pwccType_useHtmlFontFamily;
 }
 
+code,
+kbd,
+pre,
+samp {
+	font-family: $pwccType_preformattedFont;
+}
+
+
 h1, .u-h1,
 h2, .u-h2,
 h3, .u-h3,
