@@ -1,14 +1,20 @@
 blockquote {
 	color: $pwccCol_useBlockquoteColor;
 	background-color: $pwccCol_useBlockquoteBackgroundColor;
-	border-left: 1px solid;
-	margin-left: 10em;
-	padding-left: calc( 2em - 1px );
-	padding-right: 12em;
+//	margin-left: 10em;
+	padding-left: 2em;
+	padding-right: 2em;
 	padding-top: 1.5rem; /* these are 1.5rem to account for line height of 2 */
 	padding-bottom: 1.5rem; /* these are 1.5rem to account for line height of 2 */
 	> :last-child {
 		margin-bottom: 0;
+	}
+	
+	@media only screen and ( min-width: 20em ) {
+		border-left: 1px solid;
+		margin-left: 10em;
+		padding-left: calc( 2em - 1px );
+		padding-right: 12em;
 	}
 }
 
