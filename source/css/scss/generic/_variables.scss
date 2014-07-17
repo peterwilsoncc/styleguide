@@ -16,7 +16,7 @@ $pwccCol_useLinkColor: $blue;
 
 //Typography
 $pwccType_baseFontSize: 1rem;
-$pwccType_baseLineHeight: 1.5;
+$pwccType_baseLineHeight: 2;
 $pwccType_primaryFont: Lato, sans-serif;
 $pwccType_secondaryFont: "Uni Sans Regular", 'Helvetica Neue', sans-serif; // font-size-adjust:0.52;
 $pwccType_secondaryFont_Bold: "Uni Sans Bold", 'Helvetica Neue', sans-serif; // font-size-adjust:0.52;
@@ -25,10 +25,11 @@ $pwccType_preformattedFont: monospace;
 $pwccType_useHtmlFontSize: $pwccType_baseFontSize;
 $pwccType_useHtmlFontFamily: $pwccType_primaryFont;
 $pwccType_useHeadingFontFamily: $pwccType_secondaryFont_Bold;
+$pwccType_useHeadingFontFamilySmall: $pwccType_secondaryFont;
 
 
 //Spacing units
-$pwccSpace_baseSpacingUnit: 1.5rem;
+$pwccSpace_baseSpacingUnit: 2rem;
 $pwccSpace_leftSpacingUnit: 2 * $pwccSpace_baseSpacingUnit;
 
 
@@ -42,3 +43,5 @@ $pwccSpace_leftSpacingUnit: 2 * $pwccSpace_baseSpacingUnit;
 
 
 //Inuit CSS unit translations
+
+$base-font-multiplier: 1;

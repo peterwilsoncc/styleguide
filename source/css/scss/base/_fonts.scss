@@ -5,13 +5,34 @@ html {
 h1, .u-h1,
 h2, .u-h2,
 h3, .u-h3,
-h4, .u-h4,
-h5, .u-h5,
-h6, .u-h6 {
+h4, .u-h4 {
 	font-family: $pwccType_useHeadingFontFamily;
 	font-weight: bold;
 	font-style: normal;
+	text-transform: uppercase;
 }
+
+h1, .u-h1,
+h2, .u-h2,
+h3, .u-h3 {
+	@include font-size(18/16);
+	line-height: 24/18;
+	margin-bottom: 1rem;
+}
+
+h4, .u-h4,
+h5, .u-h5,
+h6, .u-h6 {
+	@include font-size(1);
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+h5, .u-h5,
+h6, .u-h6 {
+	text-transform: none;
+}
+
 
 /*
 @font-face {

@@ -471,14 +471,14 @@ blockquote, p, address,
 table,
 fieldset, figure,
 pre {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once,here.
  */
 ul, ol, dd {
-  margin-left: 3rem; }
+  margin-left: 4rem; }
 
 /*------------------------------------*\
     $Base
@@ -525,7 +525,7 @@ html {
   color: #2a2b2b;
   background-color: #f1f1f1;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 2;
   min-height: 100%;
   /* [3] */
   overflow-y: scroll;
@@ -537,12 +537,31 @@ html {
 h1, .u-h1,
 h2, .u-h2,
 h3, .u-h3,
+h4, .u-h4 {
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase; }
+
+h1, .u-h1,
+h2, .u-h2,
+h3, .u-h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24/18;
+  margin-bottom: 1rem; }
+
 h4, .u-h4,
 h5, .u-h5,
 h6, .u-h6 {
-  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-style: normal; }
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem; }
+
+h5, .u-h5,
+h6, .u-h6 {
+  text-transform: none; }
 
 /*
 @font-face {
