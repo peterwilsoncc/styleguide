@@ -661,5 +661,20 @@ blockquote cite {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+.Logo {
+  max-width: 6rem;
+  max-height: 6rem;
+  border-radius: 100%;
+  border: .5rem solid white;
+  background-color: white;
+  display: block; }
+
+.Logo_svg {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.Logo_fill {
+  fill: #006ef6; }
 
 /*# sourceMappingURL=style.css.map */
