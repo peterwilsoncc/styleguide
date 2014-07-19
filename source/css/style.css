@@ -811,7 +811,11 @@ blockquote cite {
 .InputSet > input,
 .InputSet > textarea,
 .InputSet-Select > select {
-  width: 100%; }
+  width: 100%;
+  border-radius: 2px; }
+
+.InputSet-Color > input {
+  border-radius: inherit; }
 
 .InputSet-Text > input,
 .InputSet-Text > textarea,
