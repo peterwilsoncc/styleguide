@@ -1,5 +1,4 @@
 .Btn {
-	
 	&,&:visited {
 		color: $pwccCol_useButtonColor;
 		background-color: $pwccCol_useButtonBackgroundColor;
@@ -24,13 +23,12 @@
 	}
 }
 
+
 	.Btn-Block {
 		@extend %margin-bottom;
 		display: block;
 		width: 100%;
 	}
-
-
 
 
 	.Btn.is-disabled {
