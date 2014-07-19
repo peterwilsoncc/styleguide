@@ -471,7 +471,8 @@ ul, ol, dl,
 blockquote, p, address,
 table,
 fieldset, figure,
-pre {
+pre,
+.InputSet {
   margin-bottom: 2rem; }
 
 /**
@@ -488,6 +489,12 @@ fieldset {
   margin-left: 0;
   margin-right: 0;
   border: 0; }
+
+input[type="search"] {
+  /* reverse setting from normalize.css */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*------------------------------------*\
     #IMAGES
@@ -524,7 +531,7 @@ li > ol {
 
 html {
   color: #2a2b2b;
-  background-color: #f1f1f1;
+  background-color: white;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -791,5 +798,51 @@ blockquote cite {
   content: '\e805'; }
 
 /* '' */
+.InputSet > label,
+.InputSet-Boolean > legend {
+  color: #bdc2c7;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5rem; }
+
+.InputSet > input,
+.InputSet > textarea,
+.InputSet-Select > select {
+  width: 100%; }
+
+.InputSet-Text > input,
+.InputSet-Text > textarea,
+.InputSet-Select > select {
+  color: #2a2b2b;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  border-width: 1px;
+  outline: none;
+  padding: calc(.5rem - 1px ) 0.75rem; }
+
+.InputSet-Text > input,
+.InputSet-Text > textarea {
+  border-style: solid;
+  border-color: #f3f3f3; }
+
+/* Error state */
+.InputSet.is-error > label {
+  color: red; }
+
+.InputSet-Text.is-error > input,
+.InputSet-Text.is-error > textarea {
+  border-color: red; }
+
+/* Boolean */
+.InputSet_Options {
+  color: #2a2b2b;
+  list-style: none;
+  margin-left: 0.5em;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
