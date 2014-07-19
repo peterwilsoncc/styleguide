@@ -472,6 +472,7 @@ blockquote, p, address,
 table,
 fieldset, figure,
 pre,
+.Btn-Block,
 .InputSet {
   margin-bottom: 2rem; }
 
@@ -677,6 +678,33 @@ blockquote cite {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+.Btn, .Btn:visited {
+  color: white;
+  background-color: #006ef6;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  border-radius: 2px;
+  padding: .5rem .8125rem; }
+.Btn:hover, .Btn:focus, .Btn:active {
+  color: white;
+  background-color: #005ed2;
+  text-decoration: none; }
+
+.Btn-Block {
+  display: block;
+  width: 100%; }
+
+.Btn.is-disabled, .Btn.is-disabled:visited, .Btn.is-disabled:hover, .Btn.is-disabled:focus, .Btn.is-disabled:active {
+  background-color: #bdc2c7;
+  cursor: default;
+  pointer-events: none; }
+
 .Logo {
   max-width: 6rem;
   max-height: 6rem;

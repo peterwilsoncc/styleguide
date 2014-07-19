@@ -24,6 +24,11 @@ $pwccCol_useInputInputColor: $black;
 $pwccCol_useInputInputBackground: #f3f3f3;
 $pwccCol_useInputErrorColor: red;
 
+$pwccCol_useButtonColor: $white;
+$pwccCol_useButtonBackgroundColor: $blue;
+$pwccCol_useButtonBackgroundHoverColor: #005ED2;
+$pwccCol_useButtonDisabledBackgroundColor: $lightgrey;
+
 
 //Typography
 $pwccType_baseFontSize: 1rem;
@@ -49,6 +54,9 @@ $pwccSpace_leftSpacingUnit: 1 * $pwccSpace_baseSpacingUnit;
 
 
 //Borders
+$pwccBorder_radiusDefault: 2px;
+
+$pwccBorder_useButtonRadius: $pwccBorder_radiusDefault;
 
 
 //Breakpoints
