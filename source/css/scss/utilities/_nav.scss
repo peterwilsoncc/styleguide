@@ -1,0 +1,9 @@
+.u-nav {
+	list-style: none;
+	margin-left: 0;
+}
+
+	.u-nav > li,
+	.u-nav > li > a {
+		display: inline-block;
+	}
