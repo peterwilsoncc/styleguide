@@ -633,8 +633,10 @@ table {
 
 th, td {
   text-align: left;
+  vertical-align: top;
   border: 1px solid;
-  padding: .25rem .5rem; }
+  /* different paddingto allow for line hiehht */
+  padding: .5rem 1rem; }
 
 /*------------------------------------*\
     $Utilities
