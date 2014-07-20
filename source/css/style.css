@@ -906,4 +906,16 @@ th, td {
 .EntryMeta_Detail, .EntryMeta_Detail:visited, .EntryMeta_Detail:hover, .EntryMeta_Detail:focus, .EntryMeta_Detail:active {
   color: #2a2b2b; }
 
+.Headline {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  font-size-adjust: .52;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
 /*# sourceMappingURL=style.css.map */

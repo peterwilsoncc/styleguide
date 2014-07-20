@@ -32,6 +32,8 @@ $pwccCol_useButtonDisabledBackgroundColor: $lightgrey;
 $pwccCol_useEntryMetaColor: $lightgrey;
 $pwccCol_useEntryMetaDetailColor: $black;
 
+$pwccCol_useHeadlineColor: $blue;
+
 
 
 //Typography
@@ -48,6 +50,8 @@ $pwccType_useHeadingFontFamily: $pwccType_secondaryFont_Bold;
 $pwccType_useHeadingFontFamilySmall: $pwccType_secondaryFont;
 
 $pwccType_useEntryMetaFontFamily: $pwccType_secondaryFont;
+
+$pwccCol_useHeadlineFontFamily: $pwccType_secondaryFont_Bold;
 
 //Spacing units
 $pwccSpace_baseSpacingUnit: 2rem;
