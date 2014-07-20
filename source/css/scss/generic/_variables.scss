@@ -5,10 +5,11 @@
 //Media Queries
 
 $pwccMq_mediumUp: 48em;
+$pwccMq_LargeUp: 60em;
 
 
 $pwccMq_useCaptionMediumUp: $pwccMq_mediumUp;
-
+$pwccMq_useSiteNavLargeUp: $pwccMq_LargeUp;
 
 //Base colors
 $blue: #006ef6;
@@ -46,6 +47,8 @@ $pwccCol_useCaptionColor: $lightgrey;
 $pwccCol_useCaptionLinkColor: $white;
 $pwccCol_useCaptionBackgroundColor: rgba(0,0,0,.8);
 
+$pwccCol_useSiteNav: $blue;
+
 
 
 //Typography
@@ -67,6 +70,7 @@ $pwccCol_useHeadlineFontFamily: $pwccType_secondaryFont_Bold;
 
 $pwccType_useCaptionTextFontFamily: $pwccType_secondaryFont;
 
+$pwccType_useSiteNavFontFamily: $pwccType_secondaryFont_Bold;
 
 //Spacing units
 $pwccSpace_baseSpacingUnit: 2rem;

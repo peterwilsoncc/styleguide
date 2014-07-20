@@ -956,4 +956,38 @@ Breaks the naming convention to fit with WordPress's default classes
 .wp-caption-text > a:visited {
   color: white; }
 
+.SiteNav {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1; }
+
+.SiteNav_List {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1rem; }
+
+.SiteNav_List > li {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: 1rem; }
+
+.SiteNav_List > li:last-child {
+  margin-right: 0; }
+
+.SiteNav_List > li > a {
+  color: inherit;
+  display: inline-block; }
+
+@media screen and (min-width: 60em) {
+  .SiteNav_List > li {
+    display: block;
+    margin-right: 0; }
+
+  .SiteNav_List > li > a {
+    display: block; } }
+
 /*# sourceMappingURL=style.css.map */
