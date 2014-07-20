@@ -4,4 +4,7 @@ public/*
 config.ini
 latest-change.txt
 *-ck.js
+*.min.css
+*.min.scss
+*.min.css.map
 *.sass-cache/
