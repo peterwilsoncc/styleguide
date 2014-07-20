@@ -1,0 +1,23 @@
+.EntryMeta {
+	color: $pwccCol_useEntryMetaColor;
+	
+	font-family: $pwccType_useEntryMetaFontFamily;
+	@include font-size(13/16);
+	line-height: (16/13);
+	text-transform: uppercase;
+}
+
+	.EntryMeta_Item {
+		margin-right: .5rem;
+	}
+
+	.EntryMeta_Item:last-child {
+		margin-right: 0;
+	}
+
+	.EntryMeta_Detail {
+		&,&:visited,
+		&:hover,&:focus,&:active {
+			color: $pwccCol_useEntryMetaDetailColor;
+		}
+	}

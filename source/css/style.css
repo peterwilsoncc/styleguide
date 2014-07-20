@@ -889,4 +889,33 @@ th, td {
   margin-left: 0.5em;
   margin-bottom: 0; }
 
+.EntryMeta {
+  color: #bdc2c7;
+  font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+  text-transform: uppercase; }
+
+.EntryMeta_Item {
+  margin-right: .5rem; }
+
+.EntryMeta_Item:last-child {
+  margin-right: 0; }
+
+.EntryMeta_Detail, .EntryMeta_Detail:visited, .EntryMeta_Detail:hover, .EntryMeta_Detail:focus, .EntryMeta_Detail:active {
+  color: #2a2b2b; }
+
+.Headline {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  font-size-adjust: .52;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
 /*# sourceMappingURL=style.css.map */
