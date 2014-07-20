@@ -33,6 +33,7 @@
 @import "base/page";
 @import "base/fonts";
 @import "base/blockquotes";
+@import "base/tables";
 
 
 /*------------------------------------*\
@@ -57,7 +58,9 @@
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+@import "components/Btn";
 @import "components/Logo";
 @import "components/Icons";
+@import "components/InputSet";
 
 

@@ -471,7 +471,9 @@ ul, ol, dl,
 blockquote, p, address,
 table,
 fieldset, figure,
-pre {
+pre,
+.Btn-Block,
+.InputSet {
   margin-bottom: 2rem; }
 
 /**
@@ -488,6 +490,12 @@ fieldset {
   margin-left: 0;
   margin-right: 0;
   border: 0; }
+
+input[type="search"] {
+  /* reverse setting from normalize.css */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*------------------------------------*\
     #IMAGES
@@ -524,7 +532,7 @@ li > ol {
 
 html {
   color: #2a2b2b;
-  background-color: #f1f1f1;
+  background-color: white;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -618,6 +626,18 @@ blockquote a:active {
 blockquote cite {
   color: #bdc2c7; }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid; }
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid;
+  /* different paddingto allow for line hiehht */
+  padding: .5rem 1rem; }
+
 /*------------------------------------*\
     $Utilities
 \*------------------------------------*/
@@ -670,6 +690,33 @@ blockquote cite {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+.Btn, .Btn:visited {
+  color: white;
+  background-color: #006ef6;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  border-radius: 2px;
+  padding: .5rem .8125rem; }
+.Btn:hover, .Btn:focus, .Btn:active {
+  color: white;
+  background-color: #005ed2;
+  text-decoration: none; }
+
+.Btn-Block {
+  display: block;
+  width: 100%; }
+
+.Btn.is-disabled, .Btn.is-disabled:visited, .Btn.is-disabled:hover, .Btn.is-disabled:focus, .Btn.is-disabled:active {
+  background-color: #bdc2c7;
+  cursor: default;
+  pointer-events: none; }
+
 .Logo {
   max-width: 6rem;
   max-height: 6rem;
@@ -791,5 +838,55 @@ blockquote cite {
   content: '\e805'; }
 
 /* '' */
+.InputSet > label,
+.InputSet-Boolean > legend {
+  color: #bdc2c7;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5rem; }
+
+.InputSet > input,
+.InputSet > textarea,
+.InputSet-Select > select {
+  width: 100%;
+  border-radius: 2px; }
+
+.InputSet-Color > input {
+  border-radius: inherit; }
+
+.InputSet-Text > input,
+.InputSet-Text > textarea,
+.InputSet-Select > select {
+  color: #2a2b2b;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  border-width: 1px;
+  outline: none;
+  padding: calc(.5rem - 1px ) 0.75rem; }
+
+.InputSet-Text > input,
+.InputSet-Text > textarea {
+  border-style: solid;
+  border-color: #f3f3f3; }
+
+/* Error state */
+.InputSet.is-error > label {
+  color: red; }
+
+.InputSet-Text.is-error > input,
+.InputSet-Text.is-error > textarea {
+  border-color: red; }
+
+/* Boolean */
+.InputSet_Options {
+  color: #2a2b2b;
+  list-style: none;
+  margin-left: 0.5em;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
