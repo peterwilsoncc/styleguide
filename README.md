@@ -1,6 +1,6 @@
 ## PWCC Pattern Library *Work in progress*
 
-Pattern library work in progress for [my website](http://peterwilson.cc/).
+Pattern library work in progress for [my website](http://peterwilson.cc/). You can see the imcomplete pattern library at [styleguide.peterwilson.cc](http://styleguide.peterwilson.cc/)
 
 At the time of writing, I've done atoms and some of the molecules - more work needs to be completed.
 
