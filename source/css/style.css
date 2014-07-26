@@ -641,7 +641,8 @@ th, td {
 /*------------------------------------*\
     $Utilities
 \*------------------------------------*/
-.u-cf:after {
+.u-cf:after,
+.Pagination:after {
   content: "";
   display: table;
   clear: both; }
@@ -991,5 +992,33 @@ Breaks the naming convention to fit with WordPress's default classes
 
   .SiteNav_List > li > a {
     display: block; } }
+.Pagination {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286; }
+
+.Pagination > div {
+  float: left;
+  width: 33%; }
+
+.Pagination_Direction {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.Pagination_Direction-Next {
+  text-align: right; }
+
+.Pagination_Current {
+  width: 34%;
+  text-align: center; }
+
+.Pagination_Total {
+  color: #bdc2c7;
+  font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

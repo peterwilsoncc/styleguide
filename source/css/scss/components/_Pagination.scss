@@ -1,0 +1,36 @@
+.Pagination {
+	@extend %clearfix;
+	
+	@include font-size(14/16);
+	line-height: (16/14);
+}
+
+	.Pagination > div {
+		float: left;
+		width: 33%;
+	}
+
+	.Pagination_Direction {
+		color: $pwccCol_usePaginationDirectionColor;
+	
+		font-family: $pwccType_usePaginationDirectionFontFamily;
+		font-weight: bold;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+	
+	.Pagination_Direction-Next {
+		text-align: right;
+	}
+	
+	.Pagination_Current {
+		width: 34%;
+		text-align: center;
+	}
+	
+	.Pagination_Total {
+		color: $pwccCol_usePaginationTotalColor;
+		font-family: $pwccType_usePaginationCurrentFontFamily;
+		font-weight: normal;
+		font-style: normal;
+	}

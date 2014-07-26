@@ -49,6 +49,9 @@ $pwccCol_useCaptionBackgroundColor: rgba(0,0,0,.8);
 
 $pwccCol_useSiteNav: $blue;
 
+$pwccCol_usePaginationDirectionColor: $blue;
+$pwccCol_usePaginationCurrentColor: $black;
+$pwccCol_usePaginationTotalColor: $lightgrey;
 
 
 //Typography
@@ -71,6 +74,10 @@ $pwccCol_useHeadlineFontFamily: $pwccType_secondaryFont_Bold;
 $pwccType_useCaptionTextFontFamily: $pwccType_secondaryFont;
 
 $pwccType_useSiteNavFontFamily: $pwccType_secondaryFont_Bold;
+
+$pwccType_usePaginationDirectionFontFamily: $pwccType_secondaryFont_Bold;
+$pwccType_usePaginationCurrentFontFamily: $pwccType_secondaryFont;
+
 
 //Spacing units
 $pwccSpace_baseSpacingUnit: 2rem;
