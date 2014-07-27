@@ -649,15 +649,29 @@ th, td {
   display: table;
   clear: both; }
 
+.SocialShare {
+  font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
+  font-size-adjust: 0.52;
+  font-weight: normal;
+  font-style: normal; }
+
+.SocialLink {
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-size-adjust: 0.52;
+  font-weight: bold;
+  font-style: normal; }
+
 .u-secondaryFont {
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif !important;
   font-size-adjust: 0.52 !important;
   font-weight: normal !important;
   font-style: normal !important; }
 
-.u-secondaryFont--bold {
+.u-secondaryFont-bold {
   font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif !important;
-  font-weight: bold !important; }
+  font-size-adjust: 0.52 !important;
+  font-weight: bold !important;
+  font-style: normal !important; }
 
 /*
 .u-hX helper classes iin base/fonts
@@ -685,6 +699,19 @@ th, td {
 .u-nav > li,
 .u-nav > li > a {
   display: inline-block; }
+
+.u-nav-stacked > li {
+  display: list-item; }
+
+.u-nav-stacked > li > a {
+  display: block; }
+
+.u-accessibility {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; }
 
 /*------------------------------------*\
     $PAGE STRUCTURE
@@ -1054,5 +1081,45 @@ so I am breaking the naming convention here to match its HTML.
     float: none;
     padding-left: 0;
     padding-right: 0; } }
+.SocialShare {
+  color: #bdc2c7;
+  text-transform: uppercase; }
+
+.SocialShare_Title {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.84615;
+  margin-bottom: 0; }
+
+.SocialShare_List {
+  list-style: none;
+  margin-left: 0; }
+
+.SocialShare_List > li {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-size: 0.8125rem; }
+
+.SocialLink, .SocialLink:visited {
+  color: inherit;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.69231;
+  min-width: 3rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 3px;
+  margin-bottom: .5rem;
+  padding-right: .3em; }
+.SocialLink:hover, .SocialLink:focus, .SocialLink:active {
+  color: inherit;
+  text-decoration: none; }
+
+.SocialLink_Count {
+  visibility: hidden; }
+  .SocialLink:hover .SocialLink_Count, .SocialLink:focus .SocialLink_Count,
+  .SocialLink_Count .SocialLink:active {
+    visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
