@@ -231,10 +231,10 @@ var console = this.console || {  // jshint ignore:line
 				validator = function(){return true;},
 				$inputSet = $input.parentNode;
 			
-			if ( 'url' === $input.type ) {
+			if ( 'url' === $input.getAttribute( 'type') ) {
 				validator = validateWebsite;
 			}
-			else if ( 'email' === $input.type ) {
+			else if ( 'email' === $input.getAttribute( 'type') ) {
 				validator = validateEmail;
 			}
 			
