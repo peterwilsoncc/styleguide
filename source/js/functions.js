@@ -182,10 +182,20 @@ var console = this.console || {  // jshint ignore:line
 	
 	function commentForm() {
 		var $form = $( '#commentform' ),
-			$inputs = $form[0].querySelectorAll( 'input,textarea' ),
+			$inputs,
 			preChecked = false,
 			i,l;
 		
+		if ( 0 === $form.length ) {
+			return;
+		}
+		
+		$inputs = $form[0].querySelectorAll( 'input,textarea' );
+
+		if ( 0 === $inputs.length ) {
+			return;
+		}
+
 		$form[0].addEventListener( 'submit', eventValidateForm );
 		for ( i=0,l=$inputs.length; i<l; i++ ) {
 			$inputs[i].addEventListener( 'keyup', eventValidateInput );
