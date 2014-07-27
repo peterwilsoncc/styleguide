@@ -21,12 +21,14 @@ so I am breaking the naming convention here to match its HTML.
 		.comment-form > div {
 			width: 50%;
 			float: left;
-			padding-right: 2rem;
+		}
+		
+		.comment-form > div:nth-child(2n-1) {
+			padding-right: 1rem;
 		}
 	
 		.comment-form > div:nth-child(2n) {
-			padding-left: 2rem;
-			padding-right: 0;
+			padding-left: 1rem;
 		}
 	
 		.comment-form > .comment-form_comment.comment-form_comment {

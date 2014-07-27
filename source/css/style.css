@@ -1033,12 +1033,13 @@ so I am breaking the naming convention here to match its HTML.
 @media only screen and (min-width: 35em) {
   .comment-form > div {
     width: 50%;
-    float: left;
-    padding-right: 2rem; }
+    float: left; }
+
+  .comment-form > div:nth-child(2n-1) {
+    padding-right: 1rem; }
 
   .comment-form > div:nth-child(2n) {
-    padding-left: 2rem;
-    padding-right: 0; }
+    padding-left: 1rem; }
 
   .comment-form > .comment-form_comment.comment-form_comment {
     /* double selector is specificity hack to override nth-child above */
