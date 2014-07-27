@@ -695,7 +695,9 @@ th, td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-.Btn, .form-submit > [type="submit"], .Btn:visited, .form-submit > [type="submit"]:visited {
+.Btn, .Btn:visited,
+.form-submit > [type="submit"],
+.form-submit > [type="submit"]:visited {
   color: white;
   background-color: #006ef6;
   font-size: 14px;
@@ -708,16 +710,20 @@ th, td {
   border: 0;
   border-radius: 2px;
   padding: .5rem .8125rem; }
-.Btn:hover, .form-submit > [type="submit"]:hover, .Btn:focus, .form-submit > [type="submit"]:focus, .Btn:active, .form-submit > [type="submit"]:active {
+.Btn:hover, .Btn:focus, .Btn:active,
+.form-submit > [type="submit"]:hover,
+.form-submit > [type="submit"]:focus,
+.form-submit > [type="submit"]:active {
   color: white;
   background-color: #005ed2;
   text-decoration: none; }
 
-.Btn-Block, .form-submit > [type="submit"] {
+.Btn-Block,
+.form-submit > [type="submit"] {
   display: block;
   width: 100%; }
 
-.Btn.is-disabled, .form-submit > .is-disabled[type="submit"], .Btn.is-disabled:visited, .form-submit > .is-disabled[type="submit"]:visited, .Btn.is-disabled:hover, .form-submit > .is-disabled[type="submit"]:hover, .Btn.is-disabled:focus, .form-submit > .is-disabled[type="submit"]:focus, .Btn.is-disabled:active, .form-submit > .is-disabled[type="submit"]:active {
+.Btn.is-disabled, .Btn.is-disabled:visited, .Btn.is-disabled:hover, .Btn.is-disabled:focus, .Btn.is-disabled:active {
   background-color: #bdc2c7;
   cursor: default;
   pointer-events: none; }
