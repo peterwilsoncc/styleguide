@@ -473,6 +473,7 @@ table,
 fieldset, figure,
 pre,
 .Btn-Block,
+.form-submit > [type="submit"],
 .InputSet {
   margin-bottom: 2rem; }
 
@@ -642,7 +643,8 @@ th, td {
     $Utilities
 \*------------------------------------*/
 .u-cf:after,
-.Pagination:after {
+.Pagination:after,
+.comment-form:after {
   content: "";
   display: table;
   clear: both; }
@@ -693,7 +695,7 @@ th, td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-.Btn, .Btn:visited {
+.Btn, .form-submit > [type="submit"], .Btn:visited, .form-submit > [type="submit"]:visited {
   color: white;
   background-color: #006ef6;
   font-size: 14px;
@@ -706,16 +708,16 @@ th, td {
   border: 0;
   border-radius: 2px;
   padding: .5rem .8125rem; }
-.Btn:hover, .Btn:focus, .Btn:active {
+.Btn:hover, .form-submit > [type="submit"]:hover, .Btn:focus, .form-submit > [type="submit"]:focus, .Btn:active, .form-submit > [type="submit"]:active {
   color: white;
   background-color: #005ed2;
   text-decoration: none; }
 
-.Btn-Block {
+.Btn-Block, .form-submit > [type="submit"] {
   display: block;
   width: 100%; }
 
-.Btn.is-disabled, .Btn.is-disabled:visited, .Btn.is-disabled:hover, .Btn.is-disabled:focus, .Btn.is-disabled:active {
+.Btn.is-disabled, .form-submit > .is-disabled[type="submit"], .Btn.is-disabled:visited, .form-submit > .is-disabled[type="submit"]:visited, .Btn.is-disabled:hover, .form-submit > .is-disabled[type="submit"]:hover, .Btn.is-disabled:focus, .form-submit > .is-disabled[type="submit"]:focus, .Btn.is-disabled:active, .form-submit > .is-disabled[type="submit"]:active {
   background-color: #bdc2c7;
   cursor: default;
   pointer-events: none; }
@@ -1020,5 +1022,30 @@ Breaks the naming convention to fit with WordPress's default classes
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+/*
+ * Comment form
+ */
+/*
+WordPress's comment form HTML is not nearly as flexible/filterable as I'd like so
+so I am breaking the naming convention here to match its HTML. 
+*/
+@media only screen and (min-width: 35em) {
+  .comment-form > div {
+    width: 50%;
+    float: left;
+    padding-right: 2rem; }
+
+  .comment-form > div:nth-child(2n) {
+    padding-left: 2rem;
+    padding-right: 0; }
+
+  .comment-form > .comment-form_comment.comment-form_comment {
+    /* double selector is specificity hack to override nth-child above */
+    width: auto;
+    clear: left;
+    float: none;
+    padding-left: 0;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

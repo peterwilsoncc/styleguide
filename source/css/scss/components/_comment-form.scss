@@ -1,0 +1,42 @@
+/*
+ * Comment form
+ */
+
+/*
+WordPress's comment form HTML is not nearly as flexible/filterable as I'd like so
+so I am breaking the naming convention here to match its HTML. 
+*/
+
+.comment-form {
+	@extend %clearfix;
+}
+
+	.form-submit > [type="submit"] {
+		@extend .Btn;
+		@extend .Btn-Block;
+	}
+
+
+	@media only screen and ( min-width : 35em ) {
+		.comment-form > div {
+			width: 50%;
+			float: left;
+			padding-right: 2rem;
+		}
+	
+		.comment-form > div:nth-child(2n) {
+			padding-left: 2rem;
+			padding-right: 0;
+		}
+	
+		.comment-form > .comment-form_comment.comment-form_comment {
+			/* double selector is specificity hack to override nth-child above */
+			width: auto;
+			clear: left;
+			float: none;
+			// cancel both padding-left & right to allow for extra fields
+			// in the future. Twitter user name or some such
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
