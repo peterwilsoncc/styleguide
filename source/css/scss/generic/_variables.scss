@@ -2,6 +2,15 @@
     $VARIABLES
 \*------------------------------------*/
 
+//Media Queries
+
+$pwccMq_mediumUp: 48em;
+$pwccMq_LargeUp: 60em;
+
+
+$pwccMq_useCaptionMediumUp: $pwccMq_mediumUp;
+$pwccMq_useSiteNavLargeUp: $pwccMq_LargeUp;
+
 //Base colors
 $blue: #006ef6;
 $white: #ffffff;
@@ -34,6 +43,15 @@ $pwccCol_useEntryMetaDetailColor: $black;
 
 $pwccCol_useHeadlineColor: $blue;
 
+$pwccCol_useCaptionColor: $lightgrey;
+$pwccCol_useCaptionLinkColor: $white;
+$pwccCol_useCaptionBackgroundColor: rgba(0,0,0,.8);
+
+$pwccCol_useSiteNav: $blue;
+
+$pwccCol_usePaginationDirectionColor: $blue;
+$pwccCol_usePaginationCurrentColor: $black;
+$pwccCol_usePaginationTotalColor: $lightgrey;
 
 
 //Typography
@@ -52,6 +70,14 @@ $pwccType_useHeadingFontFamilySmall: $pwccType_secondaryFont;
 $pwccType_useEntryMetaFontFamily: $pwccType_secondaryFont;
 
 $pwccCol_useHeadlineFontFamily: $pwccType_secondaryFont_Bold;
+
+$pwccType_useCaptionTextFontFamily: $pwccType_secondaryFont;
+
+$pwccType_useSiteNavFontFamily: $pwccType_secondaryFont_Bold;
+
+$pwccType_usePaginationDirectionFontFamily: $pwccType_secondaryFont_Bold;
+$pwccType_usePaginationCurrentFontFamily: $pwccType_secondaryFont;
+
 
 //Spacing units
 $pwccSpace_baseSpacingUnit: 2rem;

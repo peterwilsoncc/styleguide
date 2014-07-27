@@ -1,3 +1,15 @@
+## PWCC Pattern Library *Work in progress*
+
+Pattern library work in progress for [my website](http://peterwilson.cc/). You can see the imcomplete pattern library at [styleguide.peterwilson.cc](http://styleguide.peterwilson.cc/)
+
+At the time of writing, I've done atoms and some of the molecules - more work needs to be completed.
+
+There are a number of open issues to reach version 1.0, these will be added to as I hit templates and pages.
+
+Uses Pattern Lab, original readme below.
+
+--
+
 ## About Pattern Lab
 - [Pattern Lab Website](http://patternlab.io/)
 - [About Pattern Lab](http://patternlab.io/about.html)

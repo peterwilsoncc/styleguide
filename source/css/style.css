@@ -473,6 +473,7 @@ table,
 fieldset, figure,
 pre,
 .Btn-Block,
+.form-submit > [type="submit"],
 .InputSet {
   margin-bottom: 2rem; }
 
@@ -641,14 +642,18 @@ th, td {
 /*------------------------------------*\
     $Utilities
 \*------------------------------------*/
-.u-cf:after {
+.u-cf:after,
+.Pagination:after,
+.comment-form:after {
   content: "";
   display: table;
   clear: both; }
 
 .u-secondaryFont {
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif !important;
-  font-size-adjust: 0.52 !important; }
+  font-size-adjust: 0.52 !important;
+  font-weight: normal !important;
+  font-style: normal !important; }
 
 .u-secondaryFont--bold {
   font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif !important;
@@ -690,7 +695,9 @@ th, td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-.Btn, .Btn:visited {
+.Btn, .Btn:visited,
+.form-submit > [type="submit"],
+.form-submit > [type="submit"]:visited {
   color: white;
   background-color: #006ef6;
   font-size: 14px;
@@ -703,12 +710,16 @@ th, td {
   border: 0;
   border-radius: 2px;
   padding: .5rem .8125rem; }
-.Btn:hover, .Btn:focus, .Btn:active {
+.Btn:hover, .Btn:focus, .Btn:active,
+.form-submit > [type="submit"]:hover,
+.form-submit > [type="submit"]:focus,
+.form-submit > [type="submit"]:active {
   color: white;
   background-color: #005ed2;
   text-decoration: none; }
 
-.Btn-Block {
+.Btn-Block,
+.form-submit > [type="submit"] {
   display: block;
   width: 100%; }
 
@@ -917,5 +928,131 @@ th, td {
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 1rem; }
+
+/*
+Breaks the naming convention to fit with WordPress's default classes
+*/
+.wp-caption {
+  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 0; }
+
+.wp-caption > img {
+  display: block; }
+
+.wp-caption-text {
+  color: #bdc2c7;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
+  font-size-adjust: 0.52;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+  padding: .75rem .5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block; }
+  @media only screen and (min-width: 48em) {
+    .wp-caption-text {
+      padding-left: 6rem;
+      padding-right: 6rem; } }
+
+.wp-caption-text > a,
+.wp-caption-text > a:visited {
+  color: white; }
+
+.SiteNav {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1; }
+
+.SiteNav_List {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1rem; }
+
+.SiteNav_List > li {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: 1rem; }
+
+.SiteNav_List > li:last-child {
+  margin-right: 0; }
+
+.SiteNav_List > li > a {
+  color: inherit;
+  display: inline-block; }
+
+@media screen and (min-width: 60em) {
+  .SiteNav_List > li {
+    display: block;
+    margin-right: 0; }
+
+  .SiteNav_List > li > a {
+    display: block; } }
+.Pagination {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286; }
+
+.Pagination > div {
+  float: left;
+  width: 33%; }
+
+.Pagination_Direction {
+  color: #006ef6;
+  font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.Pagination_Direction-Next {
+  text-align: right; }
+
+.Pagination_Current {
+  width: 34%;
+  text-align: center; }
+
+.Pagination_Total {
+  color: #bdc2c7;
+  font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+ * Comment form
+ */
+/*
+WordPress's comment form HTML is not nearly as flexible/filterable as I'd like so
+so I am breaking the naming convention here to match its HTML. 
+*/
+@media only screen and (min-width: 35em) {
+  .comment-form > div {
+    width: 50%;
+    float: left; }
+
+  .comment-form > div:nth-child(2n-1) {
+    padding-right: 1rem; }
+
+  .comment-form > div:nth-child(2n) {
+    padding-left: 1rem; }
+
+  .comment-form > .comment-form_comment.comment-form_comment {
+    /* double selector is specificity hack to override nth-child above */
+    width: auto;
+    clear: left;
+    float: none;
+    padding-left: 0;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
