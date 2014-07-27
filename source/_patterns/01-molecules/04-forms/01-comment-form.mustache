@@ -1,20 +1,28 @@
-<form method="post" action="{{ url }}" class="comment-form">
-	<fieldset>
-		<div class="field-container">
-			<label for="comment-name">Name</label>
-			<input id="comment-name" type="text" placeholder="Enter Your Name" />
+<div id="respond" class="comment-respond">
+	<h3 id="reply-title" class="comment-reply-title">New Comment</h3>
+
+	<form method="post" action="{{ url }}" class="comment-form" id="commentform" novalidate>
+		<div class="InputSet InputSet-Text">
+			<label for="comment-name">Name <abbr title="required">*</abbr></label>
+			<input id="comment-name" name="author" type="text" required aria-required='true' placeholder="Your name" />
 		</div>
-		<div class="field-container">
-			<label for="comment-email">Email</label>
-			<input id="comment-email" type="email" placeholder="Your email address" />
+		<div class="InputSet InputSet-Text">
+			<label for="comment-email">Valid email address <abbr title="required">*</abbr></label>
+			<input id="comment-email" name="email" type="email" required aria-required='true' placeholder="Your email address" />
 		</div>
-		<div class="field-container">
-			<label for="comment-url">URL</label>
-			<input id="comment-url" type="url" placeholder="Website if you got one" />
+		<div class="InputSet InputSet-Text">
+			<label for="comment-url">Website</label>
+			<input id="comment-url" name="url" type="url" placeholder="Website if you have one" />
 		</div>
-		<div class="field-container">
-			<label for="comment-field">Comment</label>
-			<textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+		<div class="InputSet InputSet-Text comment-form_comment">
+			<label for="comment-field">Your comment <abbr title="required">*</abbr></label>
+			<textarea id="comment-field" name="comment" rows="5" required aria-required='true' placeholder="Your comment"></textarea>
 		</div>
-	</fieldset>
-</form>
+		
+		
+		<p class="form-submit">
+			<input name="submit" type="submit" id="submit" value="Post Comment" />
+		</p>
+		
+	</form>
+</div>

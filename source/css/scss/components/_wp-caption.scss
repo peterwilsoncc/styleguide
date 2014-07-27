@@ -1,0 +1,45 @@
+/*
+Breaks the naming convention to fit with WordPress's default classes
+*/
+
+.wp-caption {
+	position: relative;
+	display:  block;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+	.wp-caption > img {
+		display: block;
+	}
+
+	.wp-caption-text {
+		color: $pwccCol_useCaptionColor;
+		background-color: $pwccCol_useCaptionBackgroundColor;
+		
+		font-family: $pwccType_useCaptionTextFontFamily;
+		font-size-adjust: 0.52;
+		font-weight: normal;
+		font-style: normal;
+		text-transform: uppercase;
+		
+		@include font-size(13/16);
+		line-height: (16/13);
+		padding: .75rem .5rem;
+		
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: block;
+		
+		@media only screen and ( min-width : $pwccMq_useCaptionMediumUp ) {
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+	}
+	
+	.wp-caption-text > a,
+	.wp-caption-text > a:visited {
+		color: $pwccCol_useCaptionLinkColor;
+	}

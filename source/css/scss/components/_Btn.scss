@@ -1,4 +1,5 @@
-.Btn {
+.Btn,
+%Btn {
 	&,&:visited {
 		color: $pwccCol_useButtonColor;
 		background-color: $pwccCol_useButtonBackgroundColor;
@@ -24,14 +25,16 @@
 }
 
 
-	.Btn-Block {
+	.Btn-Block,
+	%Btn-Block {
 		@extend %margin-bottom;
 		display: block;
 		width: 100%;
 	}
 
 
-	.Btn.is-disabled {
+	.Btn.is-disabled,
+	%Btn--is-disabled {
 		&,&:visited,
 		&:hover,&:focus,&:active {
 			background-color: $pwccCol_useButtonDisabledBackgroundColor;
