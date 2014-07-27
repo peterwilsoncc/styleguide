@@ -1082,12 +1082,12 @@ so I am breaking the naming convention here to match its HTML.
     padding-left: 0;
     padding-right: 0; } }
 .SocialShare {
-  color: #bdc2c7;
-  text-transform: uppercase; }
+  color: #bdc2c7; }
 
 .SocialShare_Title {
   font-size: 13px;
   font-size: 0.8125rem;
+  text-transform: uppercase;
   line-height: 1.84615;
   margin-bottom: 0; }
 
