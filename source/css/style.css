@@ -644,12 +644,14 @@ th, td {
 \*------------------------------------*/
 .u-cf:after,
 .Pagination:after,
-.comment-form:after {
+.comment-form:after,
+.Comment_Meta:after {
   content: "";
   display: table;
   clear: both; }
 
-.SocialShare {
+.SocialShare, .comment-reply-link,
+.comment-reply-link:visited {
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
   font-size-adjust: 0.52;
   font-weight: normal;
@@ -1081,6 +1083,29 @@ so I am breaking the naming convention here to match its HTML.
     float: none;
     padding-left: 0;
     padding-right: 0; } }
+	/*
+	@media only screen and ( min-width : 35em ) {
+		// This name, email, website on one row for super-massive screen
+		.comment-form > div {
+			width: 33.333333333%;
+		}
+		
+		.comment-form > div:nth-child(3n-2) {
+			padding-right: 1rem;
+			padding-left: 0;
+		}
+	
+		.comment-form > div:nth-child(3n-1) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		.comment-form > div:nth-child(3n) {
+			padding-left: 1rem;
+			padding-right: 0;
+		}
+	}
+	*/
 .SocialShare {
   color: #bdc2c7; }
 
@@ -1121,5 +1146,57 @@ so I am breaking the naming convention here to match its HTML.
   .SocialLink:hover .SocialLink_Count, .SocialLink:focus .SocialLink_Count,
   .SocialLink_Count .SocialLink:active {
     visibility: visible; }
+
+.Comment {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  display: block; }
+  .Comment,
+  .Comment p, .Comment blockquote, .Comment pre {
+    margin-bottom: 1.71429em; }
+
+.Comment_Meta {
+  color: #bdc2c7; }
+
+.Comment .Avatar {
+  width: 48px;
+  height: 48px;
+  float: left; }
+
+.Comment_Name,
+.Comment_Time,
+.Comment_Time > a {
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  margin-bottom: 0; }
+
+.Comment_Name {
+  float: left; }
+
+.Comment_Time {
+  float: right; }
+
+.Comment_Time > a {
+  color: inherit; }
+
+.Comment_Body {
+  clear: right;
+  float: left; }
+  .Comment_Body :last-child {
+    margin-bottom: 0; }
+
+.comment-reply-link,
+.comment-reply-link:visited {
+  color: #bdc2c7;
+  text-transform: uppercase; }
+
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:visited {
+  color: #bdc2c7; }
 
 /*# sourceMappingURL=style.css.map */
