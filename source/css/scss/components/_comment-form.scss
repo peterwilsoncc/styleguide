@@ -42,3 +42,27 @@ so I am breaking the naming convention here to match its HTML.
 			padding-right: 0;
 		}
 	}
+
+	/*
+	@media only screen and ( min-width : 35em ) {
+		// This name, email, website on one row for super-massive screen
+		.comment-form > div {
+			width: 33.333333333%;
+		}
+		
+		.comment-form > div:nth-child(3n-2) {
+			padding-right: 1rem;
+			padding-left: 0;
+		}
+	
+		.comment-form > div:nth-child(3n-1) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		.comment-form > div:nth-child(3n) {
+			padding-left: 1rem;
+			padding-right: 0;
+		}
+	}
+	*/

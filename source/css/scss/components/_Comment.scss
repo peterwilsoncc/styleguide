@@ -1,0 +1,66 @@
+.Comment {
+	@include font-size(14/16);
+	line-height: (24/14);
+	display: block;
+
+	&,
+	p, blockquote, pre {
+		margin-bottom: (24/14)*1em;
+	}
+}
+
+	.Comment_Meta {
+		color: $pwccCol_useCommentMetaColor;
+		@extend %clearfix;
+	}
+	
+	.Comment .Avatar {
+		width: 48px;
+		height: 48px;
+		float: left;
+	}
+
+	.Comment_Name,
+	.Comment_Time,
+	.Comment_Time > a {
+		font-family: inherit;
+		font-size: inherit;
+		text-transform: inherit;
+		font-weight: inherit;
+		font-style: inherit;
+		margin-bottom: 0;
+	}
+
+	.Comment_Name {
+		float: left;
+	}
+	
+	.Comment_Time {
+		float: right;
+	}
+	
+	.Comment_Time > a {
+		color: inherit;
+	}
+	
+	.Comment_Body {
+		clear: right;
+		float: left;
+		
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	.comment-reply-link,
+	.comment-reply-link:visited {
+		color: $pwccCol_useCommentReplyColor;
+		text-transform: uppercase;
+		@extend %secondaryFont;
+	}
+	
+	.comment-reply-link:hover,
+	.comment-reply-link:focus,
+	.comment-reply-link:visited {
+		color: $pwccCol_useCommentReplyColor;
+	}

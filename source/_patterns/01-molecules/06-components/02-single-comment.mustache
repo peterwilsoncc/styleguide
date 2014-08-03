@@ -1,9 +1,18 @@
-<li class="comment-container">
-	<div class="comment-meta">
-		{{> atoms-avatar }}
-		<h4 class="comment-name"><a href="#">{{ name.first }} {{ name.last }}</a></h4>
+<li class="Comment">
+	<div class="Comment_Meta vcard">
+		<!-- {{> atoms-avatar }} -->
+		<h4 class="Comment_Name">
+			<cite class="fn">
+				<a href="#" class="url">{{ name.first }} {{ name.last }}</a>
+			</cite>
+			says
+		</h4>
+		<time datetime="1905-11-13T09:00+1000" class="Comment_Time"><a href="{{ url }}">June 21, 2014 at 9:32am</a></time>
 	</div>
-	<div class="comment-text">
+	<div class="Comment_Body">
 		<p>{{ description }}</p>
+	</div>
+	<div class="Comment_Reply">
+		<a href="#" class="comment-reply-link">Reply</a>
 	</div>
 </li>

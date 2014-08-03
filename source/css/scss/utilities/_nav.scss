@@ -7,3 +7,15 @@
 	.u-nav > li > a {
 		display: inline-block;
 	}
+	
+.u-nav-stacked {
+	
+}
+
+	.u-nav-stacked > li {
+		display: list-item;
+	}
+	
+	.u-nav-stacked > li > a {
+		display: block;
+	}

@@ -43,6 +43,7 @@
 @import "utilities/clearfix";
 @import "utilities/fonts";
 @import "utilities/nav";
+@import "utilities/accessibility";
 
 
 /*------------------------------------*\
@@ -68,4 +69,5 @@
 @import "components/SiteNav";
 @import "components/Pagination";
 @import "components/comment-form";
-
+@import "components/SocialLink";
+@import "components/Comment";
