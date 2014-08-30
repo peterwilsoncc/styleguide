@@ -1156,13 +1156,23 @@ so I am breaking the naming convention here to match its HTML.
   .Comment p, .Comment blockquote, .Comment pre {
     margin-bottom: 1.71429em; }
 
+.Comment-withAvatar {
+  margin-left: 64px;
+  min-height: 56px; }
+
 .Comment_Meta {
   color: #bdc2c7; }
 
-.Comment .Avatar {
+.Comment_Avatar {
   width: 48px;
   height: 48px;
-  float: left; }
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -64px; }
+
+.Comment_Avatar > img {
+  width: 48px;
+  height: 48px; }
 
 .Comment_Name,
 .Comment_Time,
