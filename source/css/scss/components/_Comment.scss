@@ -9,16 +9,29 @@
 	}
 }
 
+	.Comment-withAvatar {
+		margin-left: 48px + 16px;
+		min-height: 4+48+4px;
+	}
+
 	.Comment_Meta {
 		color: $pwccCol_useCommentMetaColor;
 		@extend %clearfix;
 	}
 	
-	.Comment .Avatar {
+	.Comment_Avatar {
 		width: 48px;
 		height: 48px;
-		float: left;
+//		float: left;
+		position: absolute;
+		margin-top: 4px;
+		margin-left: -48px - 16px;
 	}
+	
+		.Comment_Avatar > img {
+			width: 48px;
+			height: 48px;
+		}
 
 	.Comment_Name,
 	.Comment_Time,

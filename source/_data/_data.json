@@ -17,7 +17,8 @@
 		},
 		"avatar" : {
 			"src" : "../../images/fpo_avatar.png",
-			"alt" : "Person Name"
+			"alt" : "Person Name",
+			"class" : "Avatar"
 		},
 		"rectangle": {
 			"src": "http://placeimg.com/400/300/tech",

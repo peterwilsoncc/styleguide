@@ -218,7 +218,8 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -324,7 +325,9 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -455,8 +458,8 @@ ins {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*------------------------------------*\
     #SHARED
@@ -495,8 +498,8 @@ fieldset {
 input[type="search"] {
   /* reverse setting from normalize.css */
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*------------------------------------*\
     #IMAGES
@@ -649,6 +652,11 @@ th, td {
   content: "";
   display: table;
   clear: both; }
+
+.u-font-size--small {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077; }
 
 .SocialShare, .comment-reply-link,
 .comment-reply-link:visited {
@@ -946,6 +954,62 @@ th, td {
 .EntryMeta_Detail, .EntryMeta_Detail:visited, .EntryMeta_Detail:hover, .EntryMeta_Detail:focus, .EntryMeta_Detail:active {
   color: #2a2b2b; }
 
+.Header {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f3f3f3; }
+
+.Header_Logo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  width: 6rem; }
+
+.Header_Bio {
+  color: #5f5f5f;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+  padding-bottom: 1rem; }
+  .Header_Bio > :last-child {
+    margin-bottom: 0; }
+
+@media (min-width: 30em) {
+  .Header {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3.5rem, transparent), color-stop(3.5rem, white));
+    background-image: -webkit-linear-gradient(top, transparent 3.5rem, white 3.5rem);
+    background-image: linear-gradient(to bottom, transparent 3.5rem, white 3.5rem); }
+
+  .Header_Logo {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    float: left; }
+
+  .Header_NonLogo {
+    margin-top: 1rem;
+    margin-left: 7rem; } }
+@media (min-width: 60em) {
+  .Header {
+    background-image: none;
+    margin-left: 5em; }
+
+  .Header_Logo {
+    float: none;
+    position: relative;
+    left: -3rem; }
+
+  .Header_NonLogo {
+    margin-left: 0; }
+
+  .Header_Bio::before {
+    color: inherit;
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    border-top: 1px solid; } }
 .Headline {
   color: #006ef6;
   font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
@@ -1008,7 +1072,7 @@ Breaks the naming convention to fit with WordPress's default classes
 .SiteNav_List {
   list-style: none;
   margin-left: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 .SiteNav_List > li {
   display: inline-block;
@@ -1156,13 +1220,23 @@ so I am breaking the naming convention here to match its HTML.
   .Comment p, .Comment blockquote, .Comment pre {
     margin-bottom: 1.71429em; }
 
+.Comment-withAvatar {
+  margin-left: 64px;
+  min-height: 56px; }
+
 .Comment_Meta {
   color: #bdc2c7; }
 
-.Comment .Avatar {
+.Comment_Avatar {
   width: 48px;
   height: 48px;
-  float: left; }
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -64px; }
+
+.Comment_Avatar > img {
+  width: 48px;
+  height: 48px; }
 
 .Comment_Name,
 .Comment_Time,
