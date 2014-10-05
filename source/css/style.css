@@ -218,8 +218,7 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 /**
@@ -325,9 +324,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -350,7 +348,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -457,9 +454,8 @@ ins {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 /*------------------------------------*\
     #SHARED
@@ -497,9 +493,8 @@ fieldset {
 
 input[type="search"] {
   /* reverse setting from normalize.css */
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 /*------------------------------------*\
     #IMAGES
@@ -536,7 +531,7 @@ li > ol {
 
 html {
   color: #2a2b2b;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -601,30 +596,33 @@ h6, .u-h6 {
 blockquote {
   color: #006ef6;
   background-color: rgba(0, 110, 246, 0.1);
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-left: -1em;
+  margin-right: -1em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 1.5rem;
   /* these are 1.5rem to account for line height of 2 */
   padding-bottom: 1.5rem;
   /* these are 1.5rem to account for line height of 2 */ }
   blockquote > :last-child {
     margin-bottom: 0; }
-  @media only screen and (min-width: 20em) {
+  @media only screen and (min-width: 48em) {
     blockquote {
       border-left: 1px solid;
-      margin-left: 4em;
-      padding-left: calc(2em - 1px );
+      margin-left: -2em;
+      margin-right: -6em;
+      padding-left: calc( 2em - 1px );
       padding-right: 6em; } }
 
 blockquote a,
 blockquote a:visited {
-  color: black;
+  color: #000;
   text-decoration: underline; }
 
 blockquote a:focus,
 blockquote a:hover,
 blockquote a:active {
-  color: black;
+  color: #000;
   text-decoration: none; }
 
 blockquote cite {
@@ -732,10 +730,26 @@ th, td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+.Article_Body {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.Article_FullWidthBlock.Article_FullWidthBlock {
+  margin-left: -1em;
+  margin-right: -1em; }
+
+@media only screen and (min-width: 48em) {
+  .Article_Body {
+    padding-left: 6em;
+    padding-right: 6em; }
+
+  .Article_FullWidthBlock.Article_FullWidthBlock {
+    margin-left: -6em;
+    margin-right: -6em; } }
 .Btn, .Btn:visited,
 .form-submit > [type="submit"],
 .form-submit > [type="submit"]:visited {
-  color: white;
+  color: #ffffff;
   background-color: #006ef6;
   font-size: 14px;
   font-size: 0.875rem;
@@ -751,8 +765,8 @@ th, td {
 .form-submit > [type="submit"]:hover,
 .form-submit > [type="submit"]:focus,
 .form-submit > [type="submit"]:active {
-  color: white;
-  background-color: #005ed2;
+  color: #ffffff;
+  background-color: #005ED2;
   text-decoration: none; }
 
 .Btn-Block,
@@ -915,7 +929,7 @@ th, td {
   line-height: 1.71429;
   border-width: 1px;
   outline: none;
-  padding: calc(.5rem - 1px ) 0.75rem; }
+  padding: calc( .5rem - 1px ) 0.75rem; }
 
 .InputSet-Text > input,
 .InputSet-Text > textarea {
@@ -1006,7 +1020,6 @@ th, td {
 
 @media (min-width: 30em) {
   .Header {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3.5rem, transparent), color-stop(3.5rem, white));
     background-image: -webkit-linear-gradient(top, transparent 3.5rem, white 3.5rem);
     background-image: linear-gradient(to bottom, transparent 3.5rem, white 3.5rem); }
 
@@ -1087,7 +1100,7 @@ Breaks the naming convention to fit with WordPress's default classes
 
 .wp-caption-text > a,
 .wp-caption-text > a:visited {
-  color: white; }
+  color: #ffffff; }
 
 .SiteNav {
   color: #006ef6;

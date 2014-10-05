@@ -178,6 +178,7 @@ var console = this.console || {  // jshint ignore:line
 	
 	function domReadyEvent() {
 		commentForm();
+		fullWidthBlocks();
 	}
 	
 	function commentForm() {
@@ -276,7 +277,19 @@ var console = this.console || {  // jshint ignore:line
 		
 	}
 	
-	
+	function fullWidthBlocks() {
+		var $articleBody = $( '.js-Article_Body' ),
+			$allImages,
+			i, j;
+		
+		for( i=$articleBody.length-1 ; 0<=i ; i-- ) {
+			$allImages = $articleBody[i].querySelectorAll( 'img' ); // all images
+			
+			for ( j=$allImages.length-1; 0<=j; j-- ) {
+				$allImages[j].parentNode.classList.add( 'Article_FullWidthBlock' );
+			}
+		}
+	}
 	
 	/* helper functions */
 	function $( selector ) {  // jshint ignore:line
