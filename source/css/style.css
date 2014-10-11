@@ -608,23 +608,25 @@ h6, .u-h6 {
 blockquote {
   color: #006ef6;
   background-color: rgba(0, 110, 246, 0.1);
-  margin-left: -1em;
-  margin-right: -1em;
-  padding-left: 1em;
-  padding-right: 1em;
   padding-top: 1.5rem;
   /* these are 1.5rem to account for line height of 2 */
   padding-bottom: 1.5rem;
   /* these are 1.5rem to account for line height of 2 */ }
+  .Article_Body > blockquote {
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 1em;
+    padding-right: 1em; }
   blockquote > :last-child {
     margin-bottom: 0; }
   @media only screen and (min-width: 48em) {
     blockquote {
-      border-left: 1px solid;
-      margin-left: -2em;
-      margin-right: -6em;
-      padding-left: calc( 2em - 1px );
-      padding-right: 6em; } }
+      border-left: 1px solid; }
+      .Article_Body > blockquote {
+        margin-left: -2em;
+        margin-right: -6em;
+        padding-left: calc( 2em - 1px );
+        padding-right: 6em; } }
 
 blockquote a,
 blockquote a:visited {
@@ -753,10 +755,6 @@ th, td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-.Article_Body {
-  padding-left: 1em;
-  padding-right: 1em; }
-
 .Article_FullWidthBlock.Article_FullWidthBlock {
   margin-left: -1em;
   margin-right: -1em; }
@@ -779,10 +777,6 @@ pre.Aricle_FullWidthBlock {
   /* Internet Explorer 5.5+ */ }
 
 @media only screen and (min-width: 48em) {
-  .Article_Body {
-    padding-left: 6em;
-    padding-right: 6em; }
-
   .Article_FullWidthBlock.Article_FullWidthBlock {
     margin-left: -6em;
     margin-right: -6em; }
@@ -997,6 +991,7 @@ pre.Aricle_FullWidthBlock {
 
 .EntryMeta {
   color: #bdc2c7;
+  margin-bottom: 3rem;
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
   font-size: 13px;
   font-size: 0.8125rem;
@@ -1459,15 +1454,26 @@ so I am breaking the naming convention here to match its HTML.
   margin-bottom: 6rem; }
 
 .Section {
-  margin-bottom: 6rem; }
-
-.Section-Comment {
+  margin-bottom: 6rem;
   margin-left: 1em;
   margin-right: 1em; }
 
 @media only screen and (min-width: 48em) {
-  .Section-Comment {
+  .Section {
     margin-left: 6em;
     margin-right: 6em; } }
+.PostList {
+  list-style: none;
+  margin-left: 0; }
+
+.PostList_Post {
+  margin-bottom: 6rem; }
+
+.PostList_Post-NoExcerpt {
+  margin-bottom: 3rem; }
+
+.more-link {
+  display: block;
+  margin-top: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
