@@ -1,11 +1,18 @@
-<section class="section latest-posts">
-	<h2 class="section-title">Latest Posts</h2>
-	<ul class="post-list">
-		<li>{{> molecules-media-block }}</li>
-		<li>{{> molecules-media-block }}</li>
-		<li>{{> molecules-media-block }}</li>
-		<li>{{> molecules-media-block }}</li>
-		<li>{{> molecules-media-block }}</li>
+<section class="Section Section-LatestPosts">
+	<h2 class="u-SectionTitle">Latest Posts</h2>
+	<ul class="PostList">
+		{{# listItems.five }}
+			<li class="PostList_Post Article {{# no-excerpt }} PostList_Post-NoExcerpt {{/ no-excerpt }}">
+				{{> molecules-headline }}
+				{{> molecules-meta }}
+				{{^ no-excerpt }}
+				<div class="Article_Body">
+					{{excerpt.long}}
+					
+					<a href="#more" class="more-link">Continue reading</a>
+				</div>
+				{{/ no-excerpt }}
+			</li>
+		{{/ listItems.five }}
 	</ul>
-	<a href="#" class="text-btn">View more posts</a>
 </section>

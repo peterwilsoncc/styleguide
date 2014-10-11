@@ -1,5 +1,6 @@
 .EntryMeta {
 	color: $pwccCol_useEntryMetaColor;
+	margin-bottom: 3rem;
 	
 	font-family: $pwccType_useEntryMetaFontFamily;
 	@include font-size(13/16);
