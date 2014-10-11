@@ -738,6 +738,11 @@ th, td {
   margin-left: -1em;
   margin-right: -1em; }
 
+.Article_FullWidthBlock > code {
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em; }
+
 @media only screen and (min-width: 48em) {
   .Article_Body {
     padding-left: 6em;
@@ -745,7 +750,11 @@ th, td {
 
   .Article_FullWidthBlock.Article_FullWidthBlock {
     margin-left: -6em;
-    margin-right: -6em; } }
+    margin-right: -6em; }
+
+  .Article_FullWidthBlock > code {
+    padding-left: 6em;
+    padding-right: 6em; } }
 .Btn, .Btn:visited,
 .form-submit > [type="submit"],
 .form-submit > [type="submit"]:visited {
@@ -1063,6 +1072,99 @@ th, td {
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 1rem; }
+
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-title {
+  color: #969896; }
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-regexp,
+.ruby .hljs-constant,
+.xml .hljs-tag .hljs-title,
+.xml .hljs-pi,
+.xml .hljs-doctype,
+.html .hljs-doctype,
+.css .hljs-id,
+.css .hljs-class,
+.css .hljs-pseudo {
+  color: #cc6666; }
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-built_in,
+.hljs-literal,
+.hljs-params,
+.hljs-constant {
+  color: #de935f; }
+
+/* Tomorrow Yellow */
+.ruby .hljs-class .hljs-title,
+.css .hljs-rules .hljs-attribute {
+  color: #f0c674; }
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-value,
+.hljs-inheritance,
+.hljs-header,
+.ruby .hljs-symbol,
+.xml .hljs-cdata {
+  color: #b5bd68; }
+
+/* Tomorrow Aqua */
+.css .hljs-hexcolor {
+  color: #8abeb7; }
+
+/* Tomorrow Blue */
+.hljs-function,
+.python .hljs-decorator,
+.python .hljs-title,
+.ruby .hljs-function .hljs-title,
+.ruby .hljs-title .hljs-keyword,
+.perl .hljs-sub,
+.javascript .hljs-title,
+.coffeescript .hljs-title {
+  color: #81a2be; }
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.javascript .hljs-function {
+  color: #b294bb; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none; }
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0 0;
+  -webkit-text-size-adjust: none; }
 
 /*
 Breaks the naming convention to fit with WordPress's default classes
