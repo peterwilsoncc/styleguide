@@ -1,12 +1,10 @@
-<section class="comments section">
-	<div class="comments-container" id="comments-container">
-		<h2 class="section-title">59 Comments</h2>
-		{{> molecules-comment-form }} 
-		<ul class="comment-list">
+<section class="CommentSection">
+		<h2 class="u-SectionTitle">59 Comments</h2>
+		<ul class="CommentList">
 			{{# listItems.five }}
 				{{> molecules-single-comment }} 
 			{{/ listItems.five }}
 		</ul>
-	</div>
-	{{> molecules-pagination }} 
+		{{> molecules-pagination }} 
+		{{> molecules-comment-form }} 
 </section>
