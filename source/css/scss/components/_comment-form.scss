@@ -11,6 +11,10 @@ so I am breaking the naming convention here to match its HTML.
 	@extend %clearfix;
 }
 
+	.comment-reply-title {
+		@extend %u-SectionTitle;
+	}
+
 	.form-submit > [type="submit"] {
 		@extend %Btn;
 		@extend %Btn-Block;
