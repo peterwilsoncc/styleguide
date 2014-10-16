@@ -28,10 +28,10 @@
     content: "#2a2b2b"; }
 
 .sg-swatch--white {
-  background-color: white; }
+  background-color: #ffffff; }
   .sg-swatch--white + .sg-label:after {
     display: inline;
-    content: "white"; }
+    content: "#ffffff"; }
 
 .sg-swatch--blue {
   background-color: #006ef6; }

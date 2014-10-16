@@ -1,17 +1,13 @@
-<div class="t-Singular">
+<div class="t-List">
 	<div class="Page">
 		<div class="Page_Header">
 			{{> organisms-header }}
 		</div>
 		<div class="Page_Main">
-			{{> molecules-headline }}
-			{{> molecules-meta }}
-			{{> molecules-social-share }}
-			
-			{{> organisms-article-body }}
-			
-			{{> organisms-comment-thread }}
-			
+			{{> organisms-latest-posts }}
+			<div class="Section">
+				{{> molecules-pagination }}
+			</div>
 		</div>
 		<div class="Page_Footer">
 			{{> organisms-footer }}

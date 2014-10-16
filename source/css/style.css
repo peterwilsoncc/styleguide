@@ -531,7 +531,7 @@ li > ol {
 
 html {
   color: #2a2b2b;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -1475,5 +1475,25 @@ so I am breaking the naming convention here to match its HTML.
 .more-link {
   display: block;
   margin-top: 1.5em; }
+
+.Page_Main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #ffffff; }
+
+.Page_Footer {
+  padding-top: 1.5rem; }
+
+@media (min-width: 60em) {
+  .Page_Header {
+    float: left;
+    width: 220px; }
+
+  .Page_Main {
+    float: left;
+    width: calc( 100% - 440px ); }
+
+  .Page_Footer {
+    clear: both; } }
 
 /*# sourceMappingURL=style.css.map */
