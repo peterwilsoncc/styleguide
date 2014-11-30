@@ -1056,7 +1056,7 @@ pre.Aricle_FullWidthBlock {
 .EntryMeta_Item:last-child {
   margin-right: 0; }
 
-.EntryMeta_Detail, .EntryMeta_Detail:visited, .EntryMeta_Detail:hover, .EntryMeta_Detail:focus, .EntryMeta_Detail:active {
+.EntryMeta_Detail, .EntryMeta_Detail:visited, .EntryMeta_Detail:hover, .EntryMeta_Detail:focus, .EntryMeta_Detail:active, .EntryMeta_Detail > a, .EntryMeta_Detail > a:visited, .EntryMeta_Detail > a:hover, .EntryMeta_Detail > a:focus, .EntryMeta_Detail > a:active {
   color: #2a2b2b; }
 
 .Footer {

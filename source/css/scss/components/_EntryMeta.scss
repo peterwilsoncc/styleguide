@@ -17,7 +17,7 @@
 		margin-right: 0;
 	}
 
-	.EntryMeta_Detail {
+	.EntryMeta_Detail, .EntryMeta_Detail>a {
 		&,&:visited,
 		&:hover,&:focus,&:active {
 			color: $pwccCol_useEntryMetaDetailColor;
