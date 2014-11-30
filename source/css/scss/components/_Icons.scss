@@ -59,18 +59,31 @@
 	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.Icon-Error:before { content: '\e80e'; } /* '' */
-.Icon-ErrorRound:before { content: '\e80c'; } /* '' */
+.Icon-TwitterSquared:before { content: '\e800'; } /* '' */
 .Icon-FacebookSquared:before { content: '\e801'; } /* '' */
-.Icon-Github:before { content: '\e807'; } /* '' */
+.Icon-MailSquared:before { content: '\e802'; } /* '' */
+.Icon-RssSquared:before { content: '\e803'; } /* '' */
 .Icon-GithubSquared:before { content: '\e804'; } /* '' */
+.Icon-Wordpress:before { content: '\e805'; } /* '' */
+.Icon-Twitter:before { content: '\e806'; } /* '' */
+.Icon-Github:before { content: '\e807'; } /* '' */
+.Icon-Meetup:before { content: '\e808'; } /* '' */
 .Icon-GooglePlus:before { content: '\e809'; } /* '' */
 .Icon-GooglePlusSquared:before { content: '\e80a'; } /* '' */
-.Icon-MailSquared:before { content: '\e802'; } /* '' */
-.Icon-Meetup:before { content: '\e808'; } /* '' */
-.Icon-Ok:before { content: '\e80d'; } /* '' */
 .Icon-OkRound:before { content: '\e80b'; } /* '' */
-.Icon-RssSquared:before { content: '\e803'; } /* '' */
-.Icon-Twitter:before { content: '\e806'; } /* '' */
-.Icon-TwitterSquared:before { content: '\e800'; } /* '' */
-.Icon-WordPress:before { content: '\e805'; } /* '' */
+.Icon-ErrorRound:before { content: '\e80c'; } /* '' */
+.Icon-Ok:before { content: '\e80d'; } /* '' */
+.Icon-Error:before { content: '\e80e'; } /* '' */
+.Icon-Retweet:before { content: '\e80f'; } /* '' */
+.Icon-ThumbsUp:before { content: '\e810'; } /* '' */
+.Icon-ThumbsUp-Dark:before { content: '\e811'; } /* '' */
+.Icon-ThumbsDown:before { content: '\e812'; } /* '' */
+.Icon-ThumbsDown-Dark:before { content: '\e813'; } /* '' */
+.Icon-Star:before { content: '\e814'; } /* '' */
+.Icon-Star-Empty:before { content: '\e815'; } /* '' */
+.Icon-Reply:before { content: '\e816'; } /* '' */
+.Icon-Facebook:before { content: '\e817'; } /* '' */
+.Icon-Tumblr:before { content: '\e818'; } /* '' */
+.Icon-TumblrSquared:before { content: '\e819'; } /* '' */
+.Icon-Mail-Dark:before { content: '\e81a'; } /* '' */
+.Icon-Mail:before { content: '\e81b'; } /* '' */
