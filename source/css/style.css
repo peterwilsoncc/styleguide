@@ -878,26 +878,42 @@ pre.Aricle_FullWidthBlock {
     /* active class added by webfont loader */
     display: inline-block; }
 
-.Icon-Error:before {
-  content: '\e80e'; }
+.Icon-TwitterSquared:before {
+  content: '\e800'; }
 
-/* '' */
-.Icon-ErrorRound:before {
-  content: '\e80c'; }
-
-/* '' */
+/* '' */
 .Icon-FacebookSquared:before {
   content: '\e801'; }
 
 /* '' */
-.Icon-Github:before {
-  content: '\e807'; }
+.Icon-MailSquared:before {
+  content: '\e802'; }
 
-/* '' */
+/* '' */
+.Icon-RssSquared:before {
+  content: '\e803'; }
+
+/* '' */
 .Icon-GithubSquared:before {
   content: '\e804'; }
 
 /* '' */
+.Icon-Wordpress:before {
+  content: '\e805'; }
+
+/* '' */
+.Icon-Twitter:before {
+  content: '\e806'; }
+
+/* '' */
+.Icon-Github:before {
+  content: '\e807'; }
+
+/* '' */
+.Icon-Meetup:before {
+  content: '\e808'; }
+
+/* '' */
 .Icon-GooglePlus:before {
   content: '\e809'; }
 
@@ -906,38 +922,74 @@ pre.Aricle_FullWidthBlock {
   content: '\e80a'; }
 
 /* '' */
-.Icon-MailSquared:before {
-  content: '\e802'; }
-
-/* '' */
-.Icon-Meetup:before {
-  content: '\e808'; }
-
-/* '' */
-.Icon-Ok:before {
-  content: '\e80d'; }
-
-/* '' */
 .Icon-OkRound:before {
   content: '\e80b'; }
 
 /* '' */
-.Icon-RssSquared:before {
-  content: '\e803'; }
+.Icon-ErrorRound:before {
+  content: '\e80c'; }
 
-/* '' */
-.Icon-Twitter:before {
-  content: '\e806'; }
+/* '' */
+.Icon-Ok:before {
+  content: '\e80d'; }
 
-/* '' */
-.Icon-TwitterSquared:before {
-  content: '\e800'; }
+/* '' */
+.Icon-Error:before {
+  content: '\e80e'; }
 
-/* '' */
-.Icon-WordPress:before {
-  content: '\e805'; }
+/* '' */
+.Icon-Retweet:before {
+  content: '\e80f'; }
 
-/* '' */
+/* '' */
+.Icon-ThumbsUp:before {
+  content: '\e810'; }
+
+/* '' */
+.Icon-ThumbsUp-Dark:before {
+  content: '\e811'; }
+
+/* '' */
+.Icon-ThumbsDown:before {
+  content: '\e812'; }
+
+/* '' */
+.Icon-ThumbsDown-Dark:before {
+  content: '\e813'; }
+
+/* '' */
+.Icon-Star:before {
+  content: '\e814'; }
+
+/* '' */
+.Icon-Star-Empty:before {
+  content: '\e815'; }
+
+/* '' */
+.Icon-Reply:before {
+  content: '\e816'; }
+
+/* '' */
+.Icon-Facebook:before {
+  content: '\e817'; }
+
+/* '' */
+.Icon-Tumblr:before {
+  content: '\e818'; }
+
+/* '' */
+.Icon-TumblrSquared:before {
+  content: '\e819'; }
+
+/* '' */
+.Icon-Mail-Dark:before {
+  content: '\e81a'; }
+
+/* '' */
+.Icon-Mail:before {
+  content: '\e81b'; }
+
+/* '' */
 .InputSet > label,
 .InputSet-Boolean > legend {
   color: #bdc2c7;
