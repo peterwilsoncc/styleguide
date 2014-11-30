@@ -1547,5 +1547,35 @@ so I am breaking the naming convention here to match its HTML.
 
   .Page_Footer {
     clear: both; } }
+/*------------------------------------*\
+    $Shame Styles
+\*------------------------------------*/
+.t-Singular .Headline,
+.t-Singular .EntryMeta {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media only screen and (min-width: 48em) {
+    .t-Singular .Headline,
+    .t-Singular .EntryMeta {
+      margin-left: 6rem;
+      margin-right: 6rem; } }
+
+.EntryMeta {
+  position: relative; }
+  .EntryMeta .SocialShare_List > li {
+    display: inline-block;
+    padding-right: .25em; }
+  @media only screen and (min-width: 60em) {
+    .EntryMeta .SocialShare_List > li {
+      display: list-item; }
+    .EntryMeta .SocialShare {
+      position: absolute;
+      width: 70px;
+      background: white;
+      top: 0;
+      left: 100%;
+      padding-left: .5rem;
+      padding-top: 2em;
+      left: calc( 100% + 6rem ); } }
 
 /*# sourceMappingURL=style.css.map */
