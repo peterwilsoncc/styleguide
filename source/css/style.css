@@ -741,6 +741,9 @@ th, td {
   padding-bottom: calc( 1.14286em - 1px );
   margin-bottom: 2rem; }
 
+.util-silentAbbr.util-silentAbbr {
+  border-bottom: 0; }
+
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
