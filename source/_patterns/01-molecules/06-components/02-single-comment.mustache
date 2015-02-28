@@ -1,22 +1,22 @@
-<li class="Comment {{# display.commentAvatar }}Comment-withAvatar{{/ display.commentAvatar }}">
+<li class="Comment p-comment h-entry {{# display.commentAvatar }}Comment-withAvatar{{/ display.commentAvatar }}">
 	<div class="Comment_Meta">
-		<div class="vcard">
+		<div class="vcard h-card p-author">
 			{{# display.commentAvatar }}
 				<div class="Comment_Avatar">
 				{{> atoms-avatar(
-					"img.avatar.class" : "Avatar photo") }}
+					"img.avatar.class" : "Avatar photo u-photo") }}
 				</div>
 			{{/ display.commentAvatar }}
 			<h4 class="Comment_Name">
 				<cite class="fn">
-					<a href="#" class="url">{{ name.first }} {{ name.last }}</a>
+					<a href="#" class="url u-url p-name">{{ name.first }} {{ name.last }}</a>
 				</cite>
 				says
 			</h4>
 		</div>
-		<time datetime="1905-11-13T09:00+1000" class="Comment_Time"><a href="{{ url }}">June 21, 2014 at 9:32am</a></time>
+		<time datetime="1905-11-13T09:00+1000" class="Comment_Time dt-published"><a href="{{ url }}" rel="bookmark">June 21, 2014 at 9:32am</a></time>
 	</div>
-	<div class="Comment_Body">
+	<div class="Comment_Body e-content">
 		<p>{{ description }}</p>
 	</div>
 	<div class="Comment_Reply">
