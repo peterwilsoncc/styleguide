@@ -22,6 +22,12 @@
 		width: calc( 100% - 440px );
 	}
 	
+	.Page_Sidebar {
+		float: left;
+		width: 220px;
+		min-height: 50px;
+	}
+	
 	.Page_Footer {
 		clear: both;
 	}
