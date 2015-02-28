@@ -23,6 +23,11 @@
 		text-align: right;
 	}
 	
+	.Pagination_Direction-Previous + .Pagination_Direction-Next {
+		// Current page/page number is optional
+		width: 67%;
+	}
+	
 	.Pagination_Current {
 		width: 34%;
 		text-align: center;

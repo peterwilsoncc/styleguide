@@ -1336,6 +1336,9 @@ Breaks the naming convention to fit with WordPress's default classes
 .Pagination_Direction-Next {
   text-align: right; }
 
+.Pagination_Direction-Previous + .Pagination_Direction-Next {
+  width: 67%; }
+
 .Pagination_Current {
   width: 34%;
   text-align: center; }
