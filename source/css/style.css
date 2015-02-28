@@ -555,33 +555,33 @@ pre,
 samp {
   font-family: "Source Code Pro", monospace; }
 
-h1, .u-h1,
-h2, .u-h2,
-h3, .u-h3,
-h4, .u-h4 {
+h1, .util-h1,
+h2, .util-h2,
+h3, .util-h3,
+h4, .util-h4 {
   font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase; }
 
-h1, .u-h1,
-h2, .u-h2,
-h3, .u-h3 {
+h1, .util-h1,
+h2, .util-h2,
+h3, .util-h3 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 24/18;
   margin-bottom: 1rem; }
 
-h4, .u-h4,
-h5, .u-h5,
-h6, .u-h6 {
+h4, .util-h4,
+h5, .util-h5,
+h6, .util-h6 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem; }
 
-h5, .u-h5,
-h6, .u-h6 {
+h5, .util-h5,
+h6, .util-h6 {
   text-transform: none; }
 
 /*
@@ -652,14 +652,14 @@ th, td {
 /*------------------------------------*\
     $Utilities
 \*------------------------------------*/
-.u-accessibility {
+.util-accessibility {
   position: absolute !important;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden !important;
   clip: rect(1px, 1px, 1px, 1px) !important; }
 
-.u-cf:after,
+.util-cf:after,
 .Pagination:after,
 .comment-form:after,
 .Comment_Meta:after {
@@ -667,12 +667,12 @@ th, td {
   display: table;
   clear: both; }
 
-.u-font-size--small {
+.util-font-size--small {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.23077; }
 
-.u-SectionTitle,
+.util-SectionTitle,
 .comment-reply-title, .SocialShare, .comment-reply-link,
 .comment-reply-link:visited {
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif;
@@ -686,20 +686,20 @@ th, td {
   font-weight: bold;
   font-style: normal; }
 
-.u-secondaryFont {
+.util-secondaryFont {
   font-family: "Uni Sans Regular", "Helvetica Neue", sans-serif !important;
   font-size-adjust: 0.52 !important;
   font-weight: normal !important;
   font-style: normal !important; }
 
-.u-secondaryFont-bold {
+.util-secondaryFont-bold {
   font-family: "Uni Sans Bold", "Helvetica Neue", sans-serif !important;
   font-size-adjust: 0.52 !important;
   font-weight: bold !important;
   font-style: normal !important; }
 
 /*
-.u-hX helper classes iin base/fonts
+.util-hX helper classes iin base/fonts
 */
 /*
 @font-face {
@@ -717,21 +717,21 @@ th, td {
 	font-style: normal;
 }
 */
-.u-nav {
+.util-nav {
   list-style: none;
   margin-left: 0; }
 
-.u-nav > li,
-.u-nav > li > a {
+.util-nav > li,
+.util-nav > li > a {
   display: inline-block; }
 
-.u-nav-stacked > li {
+.util-nav-stacked > li {
   display: list-item; }
 
-.u-nav-stacked > li > a {
+.util-nav-stacked > li > a {
   display: block; }
 
-.u-SectionTitle,
+.util-SectionTitle,
 .comment-reply-title {
   color: #bdc2c7;
   font-size: 14px;

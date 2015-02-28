@@ -1,21 +1,21 @@
-.u-nav {
+.util-nav {
 	list-style: none;
 	margin-left: 0;
 }
 
-	.u-nav > li,
-	.u-nav > li > a {
+	.util-nav > li,
+	.util-nav > li > a {
 		display: inline-block;
 	}
 	
-.u-nav-stacked {
+.util-nav-stacked {
 	
 }
 
-	.u-nav-stacked > li {
+	.util-nav-stacked > li {
 		display: list-item;
 	}
 	
-	.u-nav-stacked > li > a {
+	.util-nav-stacked > li > a {
 		display: block;
 	}
