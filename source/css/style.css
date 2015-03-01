@@ -1048,6 +1048,9 @@ pre.Aricle_FullWidthBlock {
   line-height: 1.23077;
   text-transform: uppercase; }
 
+.EntryMeta-Footer {
+  text-align: right; }
+
 .EntryMeta_Item {
   margin-right: .5rem; }
 

@@ -2549,7 +2549,7 @@
 			"flagValue": 80
 			}
 		},
-	"uglifyReservedNamesString": "$",
+	"uglifyReservedNamesString": "$,P,W,C,c",
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "2"
