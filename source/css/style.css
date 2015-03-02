@@ -667,6 +667,10 @@ th, td {
   display: table;
   clear: both; }
 
+/* display utilities, add only as needed */
+.util-Display-None {
+  display: none; }
+
 .util-font-size--small {
   font-size: 13px;
   font-size: 0.8125rem;
