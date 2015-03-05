@@ -37,16 +37,16 @@
 })(document, 'script', 'className', ' wf-');
 
 (function(document) {
-	var site = PWCC_data.siteHome;
+	var assetsDir = PWCC_data.assetsHome;
 	var b = {
 		"fonts": [{
 			"font_family": "fontello",
 			"font_size_adjust": "1",
 			"font_urls": {
-				"eot": site + "fonts/fontello.eot",
-				"ttf": site + "fonts/fontello.ttf",
-				"woff": site + "fonts/fontello.woff",
-				"svg": site + "fonts/fontello.svg"
+				"eot": assetsDir + "fonts/fontello.eot",
+				"ttf": assetsDir + "fonts/fontello.ttf",
+				"woff": assetsDir + "fonts/fontello.woff",
+				"svg": assetsDir + "fonts/fontello.svg"
 			},
 			"weight": "normal",
 			"style": "normal",
