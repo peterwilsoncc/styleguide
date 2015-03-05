@@ -23,7 +23,7 @@
 			e[C] = e[C].replace(/\bwf-loading\b/g, "") + c + "inactive";
 		}, w.timeout);
 	e[C] += c + "loading";
-	b.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+	b.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
 	b.onload = b.onreadystatechange = function() {
 		n = this.readyState;
 		if (f || n && n !== "complete" && n !== "loaded") {return;}
